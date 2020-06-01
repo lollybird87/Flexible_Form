@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexible Form</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<article class="cardBody">
+    <h1>Contact form</h1>
+    <p>Please fill your information and we'll be sending your order.</p>
+<form action="#" method="get">
+
+    <ul>
+        <li class="form">
+            <label for="userName">Your name </label>
+            <input class="entryData" id="userName" type="text" value="first name" required placeholder="name" pattern="[A-Z][a-z]{1,64}">
+            <input class="entryData" id="lastName" type="text" value="last name" required placeholder="surname" pattern="[A-Z][a-z]{1,64}">
+        </li>
+        <li class="form">
+            <label for="userEmail">Your email </label>
+            <input class="entryData" name="email" id="userEmail" type="email" value="your_mail@mail.com" required autofocus placeholder="email">
+        </li>
+        <li class="form">
+            <label for="userPhone">Phone* </label>
+            <input class="entryData" name="Phone" id="userPhone" type="text" value="000"  required autofocus placeholder="number" pattern="[0-9]{,3}">
+            <input class="entryData" name="Phone" id="userPhone2" type="text" value="000"  required autofocus placeholder="number" pattern="[0-9]{,3}">
+            <input class="entryData" name="Phone" id="userPhone3" type="text" value="000"  required autofocus placeholder="number" pattern="[0-9]{,3}">
+        </li>
+        <li class="form">
+            <label for="menu">Message subject*</label>
+            <select class="entryData colorTextMenu" name="menu" id="menu" size="1">
+                <option value="first">Registration</option>
+                <option value="second">Order</option>
+                <option value="third">Payment</option>
+                <option value="fourth">Other</option>
+            </select>
+        </li>
+        <li class="form">
+            <label for="comment">Message*</label>
+            <textarea class="entryData" name="comment" id="comment" cols="48" rows="8" required placeholder="message" > </textarea>
+        </li>
+    </ul>
+
+    <hr class="line">
+
+    <div class="form">
+        <label></label>
+        <button class="btnSubmit entryData " type="submit">Submit form</button>
+    </div>
+
+</form>
+</article>
+</body>
+</html>
