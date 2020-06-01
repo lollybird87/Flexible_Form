@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: initial;
+}
+
+body{
+    background: url("../Sea.jpg");
+    background-size: cover;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+
+    width: 100%;
+    overflow: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardBody{
+    border: 1px solid black;
+    box-shadow: 0 0 24px -2px rgba(38,37,38,1);
+    min-width: 200px;
+    width: 100%;
+    max-width: 900px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75em;
+    color: white;
+
+    padding:20px ;
+}
+
+.entryData{
+    color: gray;
+    font-size: 1em;
+
+    width: 100%;
+    min-width: 100px;
+
+    margin: 5px;
+}
+
+.btnSubmit{
+    border: 2px solid white;
+    background:none;
+
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+.btnSubmit:hover{
+    background-color: gray;
+    color: black;
+}
+
+
+
+.colorTextMenu{
+    color: black;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    flex-wrap: wrap;
+}
+.form > label {
+    flex: 0 0 20%;
+    min-width: 100px;
+}
+.form > input, .form> select, .form> textarea, .form> button  {
+    flex: 1 1;
+}
